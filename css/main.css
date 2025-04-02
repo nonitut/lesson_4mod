@@ -1,0 +1,94 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    display: block;
+}
+
+nav{
+    width: 100%;
+    height: 4vw;
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+.nav_item{
+    display: flex;
+    width: 80%;
+    height: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0vw auto ;
+}
+
+.nav_item > a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.search_fade_in{
+    position: absolute;
+    display: none;
+}
+
+.banner1{
+    width: 100%;
+    background: black;
+    height: 25vw;
+    color: aliceblue;
+    font-size: 3vw;
+}
+
+.banner1 > h1{
+    position: absolute;
+    margin-top: 10vw ;
+    margin-left: 38vw;
+}
+
+form{
+    position: relative;
+    width: 30vw;
+    margin: 2vw auto;
+}
+
+form > input[type="text"], form > input[type="number"], form > input[type="password"],
+form > input[type="date"], form > input[type="email"]{
+    width: 14vw ;
+    height: 2.5vw ;
+    margin: 0.2vw 0vw;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox_span{
+    color: #505050;
+    font-size: 0.8vw;
+    margin-left: 1.4vw;
+}
+
+.button_form{
+    background: rgb(57, 117, 213);
+    color: aliceblue;
+    width: 15vw;
+    height: 2vw;
+    margin: 1vw 7vw;
+    border: none;
+    border-radius: 5px;
+}
+
+.button_form:hover{
+    background: rgb(80, 144, 248);
+}
+
+#country, #number{
+    width: 29vw ;
+    height: 2.5vw ;
+    margin: 0.2vw 0vw;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.number_span{
+    color: #505050;
+    font-size: 0.8vw;
+
+}
