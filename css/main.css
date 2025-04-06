@@ -92,3 +92,32 @@ form > input[type="date"], form > input[type="email"]{
     font-size: 0.8vw;
 
 }
+
+
+
+
+
+#successMessage {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 1000;
+}
+
+#successMessage.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#successMessage.hidden {
+    display: none;
+}
