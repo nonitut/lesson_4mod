@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <script src="./js/get.js"  charset="UTF-8"></script>
+    <!-- <script src="./js/search.js"></script> -->
+    <script src="./js/poisk.js"></script>
 </head>
 <body>
     <nav>
         <div class="nav_item">
-            <a href="index.html">Logo</a>
+            <a href="index.html"><img class="logo_img" src="./img/mac.png" alt=""></a>
             <a href="mac.html">Mac</a>
-            <a href="#">iPhone</a>
-            <a href="#">iPad</a>
-            <a href="#">Watch</a>
-            <a href="#">TV</a>
-            <a href="#">Music</a>
-            <a href="#">Support</a>
-            <a href="#">Search</a>
-            <a href="#">Basket</a>
+            <a href="./iphone.html">iPhone</a>
+            <a href="./ipad.html">iPad</a>
+            <a href="./watch.html">Watch</a>
+            <a href="./tv.html">TV</a>
+            <a href="./music.html">Music</a>
+            <a href="./support.html">Support</a>
+            <a class="search_trigger" href="#"><img class="nav_img"  src="./img/search.png" alt=""></a>
+            <a href="#"><img class="nav_img"  src="./img/basket.png" alt=""></a>
         </div>
-    <div class="search_fade_in">
+    <div class="search_fade_in none">
+        <span class="close_search">x</span>
         <input type="text" placeholder="Search">
     </div>
     </nav>
