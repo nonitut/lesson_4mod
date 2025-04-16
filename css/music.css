@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+table{
+    margin-top: 5%;
+}
+#new_row, table{
+    width: 94%;
+    margin-left: 3%;
+    border-collapse: collapse ;
+    font-size: 1vw;
+}
+
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.4vw;
+}
+
+th{
+    color: #999;
+}
+
+th:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+/* tr > th:nth-of-type(1),tr > td:nth-of-type(1){
+    border-right: none;
+} */
+
+#new_row{
+    margin-top: 0px;
+}
+
+#new_row > select, .table_button{
+    height: 2.5vw;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.1s linear ;
+}
+.table_button{
+    width: 3.2vw;
+}
+
+.table_button:hover{
+    transition: all 0.1s linear ;
+    background: navy;
+    color: aliceblue;
+}
+
+td > span{
+    display: inline-block;
+    background: #ddd;
+    border-radius: 4px;
+    padding: 0.2vw 1.5vw;
+}
+
+.sp_red{
+    background: rgba(255, 0, 238, 0.5);
+}
+
+.sp_green{
+    background: rgba(47, 255, 0, 0.5) ;
+}
+
+#new_row > *{
+display: table-cell;
+
+}
+
+#new_row > input[name="week"]{
+    width: 9.75vw;
+}
+
+#new_row > input[name="name_of"]{
+    width: 19.85vw;
+}
+
+#new_row > input[name="date"]{
+    width: 18vw;
+}
+
+#new_row > select[name="disc"]{
+    width: 22.25vw;
+}
+
+#new_row > select[name="type"]{
+    width: 19.5vw;
+}

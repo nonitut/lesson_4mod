@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/poisk.js"></script>
+    <script src="./js/poisk.js"  charset="UTF-8"></script>
+    <script src="./js/table_music.js"  charset="UTF-8"></script>
 </head>
 <body>
 
@@ -28,6 +29,53 @@
             <input type="text" placeholder="Search">
         </div>
     </nav>
+
+    <table>
+        <!-- Таблица -->
+        <thead>
+            <!-- table head - шапка таблицы -->
+            <tr>
+                <!-- table row - ряд -->
+                <th>Неделя</th>
+                <th>Название</th>
+                <th>Дата</th>
+                <th>Предмет</th>
+                <th>Тип</th>
+                <th>+</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- table body - тело таблицы или основа-->
+            <tr>
+                <td>1</td>
+                <td>Верстаем форму</td>
+                <td>16 апреля 2025</td>
+                <td><span class="sp_red">Технологии</span></td>
+                <td><span class="sp_green">Воркшоп</span></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="new_row">
+        <input type="text" name="week" placeholder="Неделя">
+        <input type="text" name="name_of" placeholder="Название">
+        <input type="date" name="date">
+        <select name="disc" id="">
+            <option value="Technology">Технологии</option>
+            <option value="Art">Искусство</option>
+            <option value="Creative">КП</option>
+            <option value="Digital_Literacy">Цифровая грамотность</option>
+        </select>
+        <select name="type" id="">
+            <option value="Workshop">Воркшоп</option>
+            <option value="Lecture">Лекция</option>
+            <option value="Open_lesson">Открытая лекция</option>
+            <option value="Hard_codding">Кодим много</option>
+        </select>
+        <button class="table_button" type="button">+</button>
+    </form>
+
     
 </body>
 </html>
