@@ -6,9 +6,23 @@
     <title>Document</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/poisk.js"></script>
+    <script src="./js/poisk.js" charset="UTF-8"></script>
+    <script src="./js/modal.js" charset="UTF-8"></script>
 </head>
 <body>
+
+    <style>
+        body{
+            background: #eee;
+        }
+
+        h1{
+            font-size: 4em;
+            margin-left: 35rem;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+    </style>
 
     <nav>
         <div class="nav_item">
@@ -29,5 +43,24 @@
         </div>
     </nav>
     
+
+    <h1>Em & rem</h1>
+
+    <button class="open_modal"> Открыть модальное окно </button>
+    <button class="show_alert" data-type="error">Ошибка</button>
+    <button class="show_alert" data-type="success">Успех</button>
+    <button class="show_alert" data-type="warning">Предупрееждение</button>
+    <button class="show_alert" data-type="info">Информирование</button>
+
+    <div class="modal_overlay">
+        <div class="modal">
+            <h2>Вы открыли модальное окно</h2>
+            <p>Вы супер пупер молодец !!!! Вот вам цифровой балл</p>
+            <button class="close_modal">X</button>
+        </div>
+    </div>
+
+    <div class="alert_container"></div>
+
 </body>
 </html>
