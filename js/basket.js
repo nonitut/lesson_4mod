@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             total += item.price * item.quantity;
             html += `
             <li>
-                    <img src="${item.image || './img/default.png'}" alt="${item.name}" style="width:20%; height:10%">
+                    <img src="${item.image}" alt="${item.name}" style="width:20%; height:10%">
                     <br>
                     <strong>${item.name}</strong>
                     <br>
