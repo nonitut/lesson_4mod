@@ -1,0 +1,46 @@
+.sec_404{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #ccc;
+    text-align: center;
+}
+
+.h1_404{
+    font-size: 25vw;
+    margin-top: 5vw;
+}
+
+.p_404{
+    font-size: 2vw;
+}
+
+.btn_404{
+    border: none;
+    margin-top: 3vw;
+    border-radius: 100%;
+    background: orangered;
+    color: #ccc;
+    font-size: 2vw;
+    padding: 0.5vw 2vw;
+    transition: all 0.5s linear;
+}
+
+.btn_404:hover{
+    color: aliceblue;
+    background: orange;
+    transition: all 0.5s linear;
+}
+
+.img_404{
+    width: 5vw;
+    position: absolute;
+    margin-left: -3vw;
+    margin-top: 15vw;
+    transition: all 0.5s linear;
+}
+
+.img_404:hover{
+    margin-top: 13vw;
+    transition: all 0.5s linear;
+}
