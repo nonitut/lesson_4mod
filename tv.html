@@ -6,7 +6,14 @@
     <title>Document</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>
     <script src="./js/poisk.js"></script>
+    <script src="./js/splide.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/gsap.js"></script>
 </head>
 <body>
 
@@ -21,13 +28,71 @@
             <a href="./music.html">Music</a>
             <a href="./support.html">Support</a>
             <a class="search_trigger" href="#"><img class="nav_img"  src="./img/search.png" alt=""></a>
-            <a href="#">Basket</a>
+            <a class="card_button card" href="#"><img class="nav_img"  src="./img/basket.png" alt="">
+            <span class="card_count">0</span>
+            </a>
         </div>
         <div class="search_fade_in none">
             <span class="close_search">x</span>
             <input type="text" placeholder="Search">
         </div>
     </nav>
+
+    <section class="splide" aria-labelledby="carousel-heading">
+    <!-- <h2 id="carousel-heading"></h2> -->
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide"><img class="img_splide" src="./img/1.png" alt="Slide 01 "></li>
+            <li class="splide__slide"><img class="img_splide" src="./img/2.png" alt="Slide 02 "></li>
+            <li class="splide__slide"><img class="img_splide" src="./img/3.png" alt="Slide 03 "></li>
+            <li class="splide__slide"><img class="img_splide" src="./img/4.png" alt="Slide 04 "></li>
+            <li class="splide__slide"><img class="img_splide" src="./img/5.png" alt="Slide 05 "></li>
+        </ul>
+    </div>
+    </section>
+
+    <header>
+        <h1>Магазин Футболок</h1> 
+    </header>
+
+    <div class="product_card" data-id="1" data-name="Футболка" data-price="1000" data-image="./img/hq.png"  >
+        <h2>Футболка #333</h2>
+        <img class="product_card_img" src="./img/hq.png" alt="Футболка">
+        <p> Цена : 1000р </p>
+        <button class="add_to_card"> Добавить в корзину </button>
+    </div>
+
+    <div class="product_card" data-id="2" data-name="Бейсболка" data-price="1500" data-image="./img/hq.png">
+        <h2>Бейсболка</h2>
+        <img  class="product_card_img"  src="./img/hq.png" alt="Бейсболка">
+        <p> Цена : 1500р </p>
+        <button class="add_to_card"> Добавить в корзину </button>
+    </div>
+
+    <div class="card_sidebar">
+        <div class="card_items"></div>
+        <p class="total_price"></p>
+        <button class="close_card">x</button>
+    </div>
+
+    <section class="mwg_effect000">
+    <div class="medias">
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+        <div class="media"><img src="./img/hq.png" alt=""></div>
+    </div>
+
+</section>
+
     
 </body>
 </html>
